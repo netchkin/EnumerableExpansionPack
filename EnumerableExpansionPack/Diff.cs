@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace EnumerableExpansionPack
 {
-  public static class SplitExtensions
+  public static partial class SplitExtensions
   {
     public static ThreeWayDiff<TLeft, TRight> Diff<TLeft, TRight, TSharedKey>(
       this IEnumerable<TLeft> left,
@@ -45,13 +45,6 @@ namespace EnumerableExpansionPack
         Both = both,
         RightOnly = rightOnly
       };
-    }
-
-    public class ThreeWayDiff<TLeft, TRight>
-    {
-      public IEnumerable<TLeft> LeftOnly { get; internal set; }
-      public IEnumerable<Tuple<TLeft, TRight>> Both { get; internal set; }
-      public IEnumerable<TRight> RightOnly { get; internal set; }
     }
   }
 }

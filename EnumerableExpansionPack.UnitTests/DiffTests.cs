@@ -4,10 +4,10 @@ using EnumerableExpansionPack;
 
 namespace EnumerableExpansionPack.UnitTests
 {
-  public class SplitExtensionsTests
+  public class DiffTests
   {
     [Fact]
-    public void Diff_WhenPartialIntersect_ReturnsAllNonEmptyGroups()
+    public void WhenPartialIntersect_ReturnsAllNonEmptyGroups()
     {
       var left = new [] { 1, 2, 4, 10 };
       var right = new [] { 2, 3, 4, 5 };
