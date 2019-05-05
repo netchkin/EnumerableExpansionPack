@@ -6,6 +6,11 @@ namespace EnumerableExpansionPack
 {
   public static partial class SplitExtensions
   {
+    /// <summary>
+    /// Splits a collection based on a condition into two collections.
+    /// </summary>
+    /// <param name="this">Collection to split</param>
+    /// <param name="splitCondition">Condition based on which the items from the collection should be split</param>
     public static SplitResult<TItem> SplitBy<TItem>(
       this IEnumerable<TItem> @this,
       Func<TItem, bool> splitCondition)
@@ -30,8 +35,8 @@ namespace EnumerableExpansionPack
 
       return new SplitResult<TItem>
       {
-        Left = left,
-        Right = right
+        Included = left,
+        Excluded = right
       };
     }
   }

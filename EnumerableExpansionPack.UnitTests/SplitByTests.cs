@@ -15,8 +15,8 @@ namespace EnumerableExpansionPack.UnitTests
 
       var result = original.SplitBy(i => i % 2 == 0);
 
-      Assert.Equal(expectedLeft, result.Left);
-      Assert.Equal(expectedRight, result.Right);
+      Assert.Equal(expectedLeft, result.Included);
+      Assert.Equal(expectedRight, result.Excluded);
     }
   }
 }

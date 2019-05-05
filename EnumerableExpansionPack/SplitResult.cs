@@ -2,9 +2,19 @@ using System.Collections.Generic;
 
 namespace EnumerableExpansionPack
 {
+  /// <summary>
+  /// Result of the split operation
+  /// </summary>
   public class SplitResult<TItem>
   {
-    public IEnumerable<TItem> Left { get; internal set; }
-    public IEnumerable<TItem> Right { get; internal set; }
+    /// <summary>
+    /// Items that fulfill the split condition.
+    /// </summary>
+    public IEnumerable<TItem> Included { get; internal set; }
+
+    /// <summary>
+    /// Items that do not fulfill the split condition.
+    /// </summary>
+    public IEnumerable<TItem> Excluded { get; internal set; }
   }
 }

@@ -1,7 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿  <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Pavel Janecka</Authors>
+    <PackageProjectUrl>https://github.com/netchkin/EnumerableExpansionPack/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/netchkin/EnumerableExpansionPack/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/netchkin/EnumerableExpansionPack/</RepositoryUrl>
+    <PackageTags>Enumerable, C#, Linq, IEnumerable</PackageTags>
+    <PackageVersion>0.0.2</PackageVersion>
   </PropertyGroup>
-
 </Project>
