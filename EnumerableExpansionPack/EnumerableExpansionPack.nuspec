@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>EnumerableExpansionPack</id>
+    <version>0.0.2</version>
+    <description>Additional operations for IEnumerable</description>
+    <authors>Pavel Janecka</authors>
+    <license type="expression">MIT</license>
+    <tags>Enumerable C# Linq IEnumerable</tags>
+  </metadata>
+  <files>
+    <file src="../README.md" target="" />
+    <file src="bin\$configuration$\netstandard2.0\EnumerableExpansionPack.dll" target="lib\netstandard2.0" />
+    <file src="bin\$configuration$\netstandard2.0\EnumerableExpansionPack.xml" target="lib\netstandard2.0" />
+  </files>
+</package>

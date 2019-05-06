@@ -8,5 +8,6 @@
     <RepositoryUrl>https://github.com/netchkin/EnumerableExpansionPack/</RepositoryUrl>
     <PackageTags>Enumerable, C#, Linq, IEnumerable</PackageTags>
     <PackageVersion>0.0.2</PackageVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 </Project>
